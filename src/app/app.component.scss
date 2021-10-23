@@ -1,0 +1,244 @@
+.container {
+  display: flex;
+  flex-direction: row;
+
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 450px;
+  width: 100%;
+  z-index: 0;
+  box-sizing: border-box;
+}
+
+.fix-container {
+  width: 100%;
+}
+
+.short {
+  margin-top: 16px;
+  margin-left: 16px;
+  &--profile {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 16px;
+    &--imageContainer {
+      margin-bottom: 36px;
+      img {
+        border-radius: 50%;
+        border: solid 2px #005975;
+        max-height: 180px;
+        max-width: 180px;
+      }
+    }
+    &--fullName {
+      color: #4F4F4F;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+  }
+  &--cards {Title {
+      background-color: #FFF2C4;
+    }
+    &--email {
+      background-color: #DFF3FA;
+      text-transform: lowercase !important;
+    }
+    &--tel {
+      background-color: #DFF3FA;
+    }
+    &--skills {
+      background-color: #E8F5E9;
+    }
+    &--hobbies {
+      background-color: #DFF3FA;
+    }
+    &--accomplishments {
+      background-color: #DFF3FA;
+      &--fGame {
+        width: 100%;
+        &--details {
+          margin-block: 8px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          font-size: 12px;
+          font-weight: normal;
+        }
+        &--about {
+          font-size: 11px;
+          font-weight: normal;
+          color: #828282;
+          line-height: 13px;
+          text-align: justify;
+
+          .container-images {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+            img {
+              height: 230px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &--links {
+    color: #007BAF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 18px;
+    margin-bottom: 10px;
+    margin-top: 36px;
+    &--row {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+.content {
+  top: .25rem;
+  position: sticky;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &--aboutMe {
+    background-color: #A6E4F8;
+  }
+  &--education {
+    margin-left: calc(36px + 100px);
+    background-color: #C8E6C9;
+    .education-details {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      color: #828282;
+      margin-top: 8px;
+    }
+    .body {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &--experience {
+    margin-left: calc(36px + 50px);
+    background-color: #FFF2C4;
+    .body {
+      &--job {
+        margin-bottom: 16px;
+        &--details {
+          display: flex;
+          justify-content: space-between;
+          > div > span {
+            padding-left: 8px;
+            color: #039FCE;
+          }
+        }
+        &--about {
+          margin-top: 8px;
+          line-height: 15px;
+          font-size: 12px;
+          text-align: justify;
+          color: #828282;
+        }
+      }
+    }
+  }
+}
+
+.big-card {
+  margin-top: 20px;
+  display: flex;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 700px;
+  width: 100%;
+  padding-inline: 36px !important;
+
+  .container {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .title {
+      color: #005975;
+      margin-bottom: 16px;
+    }
+
+    .body {
+      color: #007BAF;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: justify;
+    }
+  }
+}
+
+.card {
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  margin-block: 4px;
+  width: 350px;
+
+  color: #007BAF;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.card-custom {
+  text-transform: none !important;
+
+  @extend .card;
+  align-items: flex-start !important;
+  box-sizing: border-box;
+  height: auto !important;
+  justify-content: flex-start !important;
+  padding: 8px;
+  flex-direction: column;
+}
+
+.card-with-list {
+  @extend .card-custom;
+  ul{
+    margin-bottom: 0px;
+    margin-top: 8px;
+    li {
+      font-size: 12px;
+      font-weight: normal;
+      margin-inline-start: -20px;
+    }
+  }
+}
+
+.link-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  a {
+    font-size: 13px;
+    font-weight: normal;
+    margin-right: 16px;
+    text-decoration: underline;
+    color: #007BAF;
+  }
+  img {
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+  }
+}
