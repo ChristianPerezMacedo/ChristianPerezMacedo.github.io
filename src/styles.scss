@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'DM Sans Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: url(/assets/font/DMsans/DMsans-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'DM Sans Bold Italic';
+  font-style: italic;
+  font-weight: bold;
+  src: url(/assets/font/DMsans/DMsans-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'DM Sans Italic';
+  font-style: italic;
+  font-weight: normal;
+  src: url(/assets/font/DMsans/DMsans-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'DM Sans Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/assets/font/DMsans/DMsans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'DM Sans Medium Italic';
+  font-style: italic;
+  font-weight: 500;
+  src: url(/assets/font/DMsans/DMsans-MediumItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: url(/assets/font/DMsans/DMsans-Regular.ttf) format("truetype");
+}
+
+app-root {
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
